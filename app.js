@@ -20,7 +20,7 @@ document.getElementById("search-Btn").addEventListener('click', function () {
           <img src="${meal.strMealThumb}" class="card-img-top" alt="..." onclick="#recipeIngrideants(${meal.strMeal})">
           <div class="card-body ">
             <h5 class="card-title text-center">${meal.strMeal}</h5>
-            <button class="btn btn-info text-white d-block mx-auto" onclick="recipeIngrideants('${meal.strMeal}')">Details</button>
+            <button class="btn btn-info text-white d-block mx-auto" onclick="recipeIngredients('${meal.strMeal}')">Details</button>
            
           </div>
         </div>
@@ -36,14 +36,14 @@ document.getElementById("search-Btn").addEventListener('click', function () {
     )
   };
 
-
-  function recipeIngrideants(name){
+const recipeIngredients = name =>{
+  
 
       fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
       .then(res => res.json())
       .then(data => {
         const detail = data.meals[0];
-        console.log(detail)
+         
         const menuRecipe = document.getElementById("details"); 
         menuRecipe.innerHTML = `
         <div class="card mx-auto shadow" style="width:26rem;">
