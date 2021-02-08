@@ -11,3 +11,20 @@
 .error{
     grid-column: 1 / span 4;
 }
+
+
+@media(max-width:576px){
+    #menu-result{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap:20px;
+    }
+}
+@media(max-width:768px){
+    #menu-result{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:20px;
+    }
+}
+
