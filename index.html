@@ -14,10 +14,12 @@
 
 <body>
   <div class="container shadow">
+
+    <!-- menu bar -->
     <section id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand text-primary fw-bold" href="#">Cooking Master</a>
+          <a class="navbar-brand text-primary fw-bold" href="#"><img src="logo1.png" alt="" class="w-75"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,10 +44,14 @@
       </nav>
     </section>
 
+    <!-- show recipe ingredients -->
+    <section>
+      <div id="details" class="mt-5">
+        <h2 class="text-center text-info fw-bold">Search Your Favorite Meal .....</h2>
+      </div>
+    </section>
 
-    <div id="details" class="mt-5">
-      <h2 class="text-center text-info fw-bold">Search Your Favourite Meal .....</h2>
-    </div>
+    <!-- for search box and button -->
     <section id="searchBox" class="mt-5 d-flex justify-content-center">
 
       <input type="text" id="search-input" placeholder="Enter an Ingredients ....." class="form-control w-50 "
@@ -53,16 +59,21 @@
       <button class="btn btn-info text-white input-btn-group" id="search-Btn">Search</button>
 
     </section>
-    <h3 id="notMatch" class='text-danger text-center error'></h3>
-    <p id="required" class="text-danger text-center"></p>
-    <section class="mt-5">
-      <div id="menu-result">
-      </div>
 
+    <!-- for empty field and error massage -->
+    <section>
+      <h3 id="notMatch" class='text-danger text-center error'></h3>
+      <h3 id="required" class="text-danger text-center"></h3>
     </section>
-<footer>
-  <p class="text-muted text-center">&copy 2021.All Right reserved sidrat H Chy</p>
-</footer>
+
+    <!-- for showing meal item -->
+    <section class="mt-5">
+      <div id="menu-result"></div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <p class="text-muted text-center">&copy 2021.All Right reserved sidrat H Chy</p>
+    </footer>
   </div>
 
 

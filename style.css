@@ -1,3 +1,4 @@
+
 #menu-result{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,6 +12,7 @@
 .error{
     grid-column: 1 / span 4;
 }
+
 footer{
     padding-top: 40vh;
     padding-bottom: 10px;
